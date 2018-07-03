@@ -12,10 +12,15 @@ The info below is designed for an Linux/Ubuntu setup. It can likely be adpated w
 
 1. Save the R code to a directory. i.e., /Users/maggie_diff_bot/maggie_diff.R
 2. Edit the lines at the top of the code under the "USER CONFIGURABLE INPUT PARAMETERS" section This is done as follows:
+
 2a. Directories: Pick whatever works for you. A suggested structure and notes are listed in the code comments.
+
 2b. Twitter token: If you do not have an rtweet twitter token, the method for obtaining and saving one is here: http://rtweet.info/articles/auth.html
-2c. Newsdiffs instance: This is the URL of the newsdiffs instance you plan to scrape from.
+
+2c. Newsdiffs instance: This is the URL of the newsdiffs instance you plan to scrape from,
+
 2d. RSS link: This is the RSS link of interest to scrape. Two notes: 1) This code was originally designed to work with the https://twitter.com/maggiet1m3 account, hence Maggie Haberman's RSS is listed. 2) Ensure that the author/RSS inserted is also scraped via the newsdiffs instance. Otherwise, you will never have any diffs.
+
 3. Create an empty file where data can be stored. As of July 2, 2018, the file must be in the main_dir and must be specifically named maggie_diff.csv (Linux/Ubuntu command to do this: touch maggie_diff.csv)
 4. Create an empty file where errors can be logged. As of July 2, 2018, the file must be in the main_dir and must be specifically named std_msgs.txt (Linux/Ubuntu command to do this: touch std_msgs.txt)
 5. At this time, if you run the code, it will populate the file and generate tweets for the latest diffs that it can already find. Note that it only polls those articles that https://twitter.com/maggiet1m3 in past 7 days (limitation of twitter API)
