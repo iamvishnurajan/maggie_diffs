@@ -20,19 +20,22 @@ library(magick)
 
 # Edit these three lines for the respective directory locations
 # It is suggested to make images and backups as subdirectories of the main_dir
-# i.e., img_dir = /main_dir/images, bkup_dir = /main_dir/backups
+# i.e., img_dir = /main_dir/images/, bkup_dir = /main_dir/backups/
+# Note - you must include the trailing slash and you must leave the quotation marks
 main_dir <- "INSERT MAIN DIRECTORY NAME HERE"
 img_dir <- "INSERT IMAGE STORAGE DIRECTOR NAME HERE"
 bkup_dir <- "INSERT BACKUP STORAGE DIRECTORY NAME HERE"
 
-# Replace "INSERT YOUR TWITTER TOKEN FILENAME" with your twitter token file name
-# As noted in the syntax below, it is suggested to place this file in the main_dir
-# See http://rtweet.info/articles/auth.html on how to create/save this twitter token
+# Replace "maggie_diff_twitter_token.rds" with your twitter token file name
+# As noted below, it is suggested to place this file in the main_dir
+# See http://rtweet.info/articles/auth.html on how to create this twitter token
+# You must leave the quotation marks and list your filename within those
 twitter_token <- readRDS(paste0(main_dir,"INSERT YOUR TWITTER TOKEN FILENAME"))
 
 # newsdiffs.org instance you plan to collect diffs from. This can be a "homegrown"
 # instance based on the newsdiffs git (https://github.com/ecprice/newsdiffs/)
-# or their main website at newsdiffs.org
+# or their main website at newsdiffs.org ("http://newsdiffs.org")
+# Note - you should NOT include the trailing slash and you must leave the quotation marks
 newsdiff_main <- "INSERT NEWSDIFF WEBSITE INSTANCE HERE"
 
 # Input URL parameter (Note: Edit this with caution! You need to ensure 
