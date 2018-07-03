@@ -10,6 +10,10 @@ Install and Setup Guidance:
 
 The info below is designed for an Linux/Ubuntu setup. It can likely be adpated with little change for MacOS as well.
 
+R prerequisite libraries: feedeR, data.table, rvest, dplyr, rtweet, RSelenium, magick
+
+Note: If you don't have all of these installed already, RSelenium was removed from CRAN recently due to a problem with some of its dependencies. Read here for the workaround: https://github.com/ropensci/RSelenium/issues/172
+
 1. Save the R code to a directory. i.e., /Users/maggie_diff_bot/maggie_diff.R
 2. Edit the lines at the top of the code under the "USER CONFIGURABLE INPUT PARAMETERS" section This is done as follows:
 
