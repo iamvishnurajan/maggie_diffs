@@ -26,7 +26,7 @@ main_dir <- "INSERT MAIN DIRECTORY NAME HERE"
 img_dir <- "INSERT IMAGE STORAGE DIRECTOR NAME HERE"
 bkup_dir <- "INSERT BACKUP STORAGE DIRECTORY NAME HERE"
 
-# Replace "maggie_diff_twitter_token.rds" with your twitter token file name
+# Replace "INSERT YOUR TWITTER TOKEN FILENAME" with your twitter token file name
 # As noted below, it is suggested to place this file in the main_dir
 # See http://rtweet.info/articles/auth.html on how to create this twitter token
 # You must leave the quotation marks and list your filename within those
