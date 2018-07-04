@@ -25,9 +25,9 @@ Note: If you don't have all of these installed already, RSelenium was removed fr
 
 2d. RSS link: This is the RSS link of interest to scrape. Two notes: 1) This code was originally designed to work with the https://twitter.com/maggiet1m3 account, hence Maggie Haberman's RSS is listed. 2) Ensure that the author/RSS inserted is also scraped via the newsdiffs instance. Otherwise, you will never have any diffs.
 
-3. Create an empty file where data can be stored. As of July 2, 2018, the file must be in the main_dir and must be specifically named maggie_diff.csv (Linux/Ubuntu command to do this: touch maggie_diff.csv)
+3. Save the provided initial .csv file for storage of article info. As of July 2, 2018, the file must be in the main_dir and must be specifically named maggie_diff.csv.
 4. Create an empty file where errors can be logged. As of July 2, 2018, the file must be in the main_dir and must be specifically named std_msgs.txt (Linux/Ubuntu command to do this: touch std_msgs.txt)
-5. At this time, if you run the code, it will populate the file and generate tweets for the latest diffs that it can already find. Note that it only polls those articles that https://twitter.com/maggiet1m3 in past 7 days (limitation of twitter API)
+5. At this time, if you run the code, it will populate the file with any new articles since the initial .csv (July 3, 2018) and generate tweets for the diffs that it can find. Note that it only polls those articles that https://twitter.com/maggiet1m3 in past 7 days (limitation of twitter API)
 6. If you want to continue polling and tweeting, schedule as needed with crontab (or other scheduling tool). Suggested run frequency is every 5-10 minutes.
 
 Upcoming v1.1 improvements planned (as of July 2, 2018):
